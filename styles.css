@@ -1,0 +1,178 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 2rem;
+    margin-bottom: 50px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    border: 2px dashed black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    height: 700px;
+    padding:  40px; 
+}
+
+
+.about img {
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid black;
+}
+
+.about p {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.bio {
+    margin-top: 2rem;
+    text-align: left;
+    gap: 8px;
+}
+
+.bio p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; 
+    padding: 20px 50px; 
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.main h2 {
+    font-size: 40px;
+    color: rgb(26, 206, 191);
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+}
+.main p {
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+.box {
+    padding: 0 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.box:hover {
+    background-color: grey;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 1rem;
+        border-radius: 20px;
+    }
+
+    .about {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .about img {
+        height: 150px;
+    }
+
+    .main h2 {
+        font-size: 30px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+}
