@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    user-select: none;
+    user-select: none;  
 }
 
 html {
@@ -17,9 +17,10 @@ header {
     align-items: center;
     border: 2px solid black;
     border-radius: 30px;
-    margin: 2rem;
-    margin-bottom: 50px;
-
+    margin: 2rem auto;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 1100px;
 }
 
 nav ul {
@@ -51,6 +52,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    width: 70%; 
+    max-width: 1200px;
+    margin: auto;
+    height: 900px; 
 }
 
 .about {
@@ -60,10 +65,9 @@ nav ul li a:hover {
     text-align: center;
     border: 2px solid black;
     border-radius: 40px;
-    height: 700px;
-    padding:  40px; 
+    padding: 40px;
+    width: 100%;
 }
-
 
 .about img {
     height: 200px;
@@ -91,10 +95,11 @@ nav ul li a:hover {
 .main {
     display: flex;
     flex-wrap: wrap;
-    width: 900px; 
-    padding: 20px 50px; 
+    max-width: 1400px;
+    padding: 40px;
     border: 2px solid black;
     border-radius: 30px;
+    margin: auto;
 }
 
 .main h2 {
@@ -106,6 +111,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: black;
 }
+
 .main p {
     font-size: 20px;
     text-indent: 50px;
@@ -119,14 +125,42 @@ nav ul li a:hover {
 }
 
 .box:hover {
+    border: 2px dashed black;
     background-color: grey;
 }
 
+.techstack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start; 
+    align-items: center;
+    text-align: center;
+}
+
+.techstack h3 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.techstack span {
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    white-space: nowrap; 
+}
+
 @media (max-width: 1024px) {
-    header {
+    header, .container, .main {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding: 20px;
+        width: 95%;
+        max-width: none;
     }
 
     nav ul {
@@ -135,31 +169,31 @@ nav ul li a:hover {
     }
 
     .container {
-        flex-direction: column;
-        align-items: center;
         gap: 1rem;
     }
 
     .main {
-        width: 100%;
+        width: 95%;
         padding: 20px;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        margin: 1rem;
+        margin: 1rem auto;
         border-radius: 20px;
+        width: 95%;
     }
 
     .about {
-        width: 90%;
+        width: 95%;
         height: auto;
         padding: 20px;
     }
 
     .main {
         padding: 10px;
+        width: 95%;
     }
 }
 
@@ -178,5 +212,10 @@ nav ul li a:hover {
 
     .main p {
         font-size: 18px;
+    }
+
+    .main, .container {
+        width: 100%;
+        padding: 10px;
     }
 }
