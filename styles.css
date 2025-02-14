@@ -55,7 +55,7 @@ nav ul li a:hover {
     width: 70%; 
     max-width: 1200px;
     margin: auto;
-    height: 900px; 
+    height: 800px; 
 }
 
 .about {
@@ -65,12 +65,12 @@ nav ul li a:hover {
     text-align: center;
     border: 2px solid black;
     border-radius: 40px;
-    padding: 40px;
+    padding: 60px;
     width: 100%;
 }
 
 .about img {
-    height: 200px;
+    height: 150px;
     border-radius: 100%;
     border: 5px solid black;
 }
@@ -132,7 +132,7 @@ nav ul li a:hover {
 .techstack {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: start; 
     align-items: center;
     text-align: center;
